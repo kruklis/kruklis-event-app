@@ -42,7 +42,7 @@ BigQuery releases multiple updates, changes, and features within single release 
 ## 📂 Project Structure
 
 ```text
-kruklis-event-talks-app/
+kruklis-event-app/
 ├── app.py                 # Flask server, feed fetcher, and XML parser
 ├── requirements.txt       # Python dependencies (Flask, Requests)
 ├── templates/
@@ -66,8 +66,8 @@ kruklis-event-talks-app/
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/kruklis/kruklis-event-talks-app.git
-   cd kruklis-event-talks-app
+   git clone https://github.com/kruklis/kruklis-event-app.git
+   cd kruklis-event-app
    ```
 
 2. **Create and activate a virtual environment**:
@@ -138,7 +138,7 @@ Fetches the XML feed from Google Cloud, parses the entries, and returns a JSON p
 You can deploy this application directly to Cloud Run:
 
 ```bash
-gcloud run deploy kruklis-event-talks-app \
+gcloud run deploy kruklis-event-app \
   --source . \
   --region us-central1 \
   --allow-unauthenticated
